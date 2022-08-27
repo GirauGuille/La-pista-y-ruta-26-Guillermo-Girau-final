@@ -1,0 +1,100 @@
+.grillaServicios{
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    @include flex(center, center, column);
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "servicosCard1 servicosCard2"
+        "servicosCard3 servicosCard4";
+    }
+    @include descktop{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "servicosCard1 servicosCard2 servicosCard3 servicosCard4";
+    }
+}
+.servicosCard1{
+    grid-area: servicosCard1;
+}
+.servicosCard2{
+    grid-area: servicosCard2;
+}
+.servicosCard3{
+    grid-area: servicosCard3;
+}
+.servicosCard4{
+    grid-area: servicosCard4;
+}
+.textoS{
+    font-family: $font_general;
+    font-size: 1.8rem;
+}
+.textoServicios{
+    color: white;
+    background-color: $back_color;
+    font-family: $font_general;
+    font-size: 1.5rem;
+    @include box;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 15px 15px;
+    @include tablet{
+        font-size: 1.7rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @include descktop{
+        font-size: 1.9rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+.boxServicos{
+    height: 90%;
+    width: 90%;
+    background-color: $back_color;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    @include box;
+    font-family: $font_general;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    @include tablet{
+        height: 95%;
+    }
+}
+.imagenS{
+    width: 80%;
+    margin-bottom: 5px;
+}
+.imagenS:hover{
+    transform: translatex(10px);
+}
+.mpCard{
+    background-color: $back_color;
+    @include box;
+    color: white;
+    margin: 3rem 3rem;
+    padding: 15px 15px;
+}
+.mediosdePago{
+    @include flexwarp;
+    font-family: $titulo_font;
+    font-size: 2rem;
+}
+.imgMedios{
+    width: 12rem;
+    margin: 15px 15px;
+}
+.pictureMP{
+    @include flexwarp;
+    margin-top: 3rem;
+}

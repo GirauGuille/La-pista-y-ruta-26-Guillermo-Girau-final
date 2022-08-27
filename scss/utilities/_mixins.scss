@@ -1,0 +1,16 @@
+@mixin flexwarp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin flex($aling, $justify, $direction){
+    display: flex;
+    align-items: $aling;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+@mixin box{
+    border: 3px solid rgba(0, 0, 0, 0.321);
+    border-radius: 2rem;
+}

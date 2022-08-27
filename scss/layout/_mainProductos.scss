@@ -1,0 +1,69 @@
+.grillaProductos{
+    @include flex(center, center, column);
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "pUno pDos"
+        "pTres pCuatro"
+        "pCinco pSeis";
+    }
+    @include descktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "pUno pDos pTres"
+        "pCuatro pCinco pSeis";
+    }
+}
+.pUno{
+    grid-area: pUno;
+} 
+.pDos{
+    grid-area: pDos;
+} 
+.pTres{
+    grid-area: pTres;
+} 
+.pCuatro{
+    grid-area: pCuatro;
+} 
+.pCinco{
+    grid-area: pCinco;
+} 
+.pSeis{
+    grid-area: pSeis;
+}
+.productos{
+    width: 80%;
+    height: 98%;
+    background-color: $back_color;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    @include box;
+    padding: 1rem 1rem;
+    @include flex(center, none, column);
+    font-family: 'Lato',sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+.imgM{
+    width: 100%;
+}
+.carruCenter{
+    width:90%;
+    margin: 10px 10px;
+    @include tablet{
+        width: 80%;
+    }
+    @include descktop{
+        margin-left: 5rem;
+    }
+}
+.imagenProducto{
+    width: 100%;
+}
+.tituloNew{
+    margin-top: 2rem;
+}
